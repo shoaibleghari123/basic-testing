@@ -88,7 +88,7 @@ class ProductTest extends TestCase
         $response->assertStatus(403);
     }
 
-    public function test_product_store_successfully()
+    public function test_product_store_successful()
     {
         $product = [
             'name' => 'Product 1',
