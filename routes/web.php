@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\ProductController;
+use \App\Http\Controllers\CategoryController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -33,6 +34,10 @@ Route::middleware('auth')->group(function () {
         Route::delete('product/{product}', [ProductController::class, 'destroy'])->name('products.destroy');
     });
 });
+
+Route::get('categories', [CategoryController::class, 'index'])
+    ->name('categories.index')
+    ->middleware('auth');
 
 Route::get('/dashboard', function () {
     return view('dashboard');
