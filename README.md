@@ -65,3 +65,40 @@ If you discover a security vulnerability within Laravel, please send an e-mail t
 # basic-testing
 A Laravel project for learning the basics of testing, focusing on essential testing techniques and best practices.
 
+1. Clone the repository and navigate into the project directory:
+
+    git clone <repository_url>
+
+    cd basic-testing
+
+2. Install the project dependencies:
+    composer install
+3. Create a new .env file:
+    cp .env.example .env
+4. Generate a new application key:
+    php artisan key:generate
+5. Create an SQLite database configuration file:
+
+   .env.testing
+   
+6. Migrate the database:
+    php artisan migrate
+7. Seed the database:
+    php artisan db:seed
+8. Run the tests:
+    php artisan test
+9. Pest Testing, switch to the pest branch:
+
+    git checkout pest
+
+    php artisan test
+    
+    php artisan test --filter ProductTestPest
+10. Test-Driven Development (TDD):
+    
+        git checkout test_driven_development
+    
+        php artisan test
+    
+        php artisan test --filter ProductTestTdd
+
