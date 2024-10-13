@@ -94,11 +94,10 @@ A Laravel project for learning the basics of testing, focusing on essential test
     php artisan test
     
     php artisan test --filter ProductTestPest
+
 10. Test-Driven Development (TDD):
-    
+
         git checkout test_driven_development
-    
         php artisan test
-    
-        php artisan test --filter ProductTestTdd
+        php artisan test --filter CategiryTest
 
